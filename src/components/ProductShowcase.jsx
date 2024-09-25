@@ -1,24 +1,20 @@
 import React from 'react'
-import cg3 from  '../assets/cg3.jpg'
-import ice2 from  '../assets/ice2.jpg'
-import gp1 from  '../assets/gp1.jpg'
-
 
 const products = [
   {
     name: 'Dipit Ice Cream',
     description: 'Indulge in our premium, creamy ice cream made with the finest ingredients and unique flavors.',
-    image: ice2
+    image: "https://res.cloudinary.com/denarffyt/image/upload/v1727288844/product-marketing/ice2_u83tlr.jpg"
   },
   {
     name: 'Corporate Gifts',
     description: 'Impress your clients and partners with our elegant and thoughtful corporate gift packages.',
-    image: cg3
+    image: "https://res.cloudinary.com/denarffyt/image/upload/v1727288843/product-marketing/cg3_mciane.jpg"
   },
   {
     name: 'Greenworld Products',
     description: 'Discover our range of eco-friendly products that help you live a more sustainable lifestyle.',
-    image: gp1
+    image: "https://res.cloudinary.com/denarffyt/image/upload/v1727288846/product-marketing/gp1_gkfgr2.jpg"
   }
 ]
 

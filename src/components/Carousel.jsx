@@ -1,22 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-import cg1 from '../assets/cg1.jpg'
-import cg2 from '../assets/cg2.jpg'
-import ice1 from '../assets/ice1.jpg'
 
 const slides = [
   {
-    image: ice1,
+    image: "https://res.cloudinary.com/denarffyt/image/upload/v1727288843/product-marketing/ice1_kphzul.jpg",
     title: 'Premium Ice Cream',
     description: 'Indulge in our creamy, artisanal ice cream made with the finest ingredients.'
   },
   {
-    image: cg1,
+    image: "https://res.cloudinary.com/denarffyt/image/upload/v1727288842/product-marketing/cg1_azzx5a.jpg",
     title: 'Elegant Corporate Gifts',
     description: 'Impress your clients with our curated selection of sophisticated corporate gifts.'
   },
   {
-    image: cg2,
+    image: "https://res.cloudinary.com/denarffyt/image/upload/v1727288843/product-marketing/cg2_n16y7i.jpg",
     title: 'Eco-Friendly Products',
     description: 'Discover our range of sustainable, environmentally conscious products.'
   }
