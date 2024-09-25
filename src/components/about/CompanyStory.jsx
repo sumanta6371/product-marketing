@@ -1,5 +1,5 @@
 import React from 'react';
-import business from '../assets/business-growth.jpg'; 
+import business from '../../assets/business-growth.jpg'; 
 
 export default function CompanyStory() {
   return (

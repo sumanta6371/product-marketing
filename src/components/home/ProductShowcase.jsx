@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const products = [
   {
@@ -27,13 +28,13 @@ export default function ProductShowcase() {
         </h2>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {products.map((product) => (
-            <div key={product.name} className="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+            <Link key={product.id} to={`/products/${product.id}`} className="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <img className="w-full h-48 object-cover" src={product.image} alt={product.name} />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{product.name}</h3>
                 <p className="text-gray-600">{product.description}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

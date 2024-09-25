@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
+import logo from '../../assets/logo4.png';
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div>
-            <img className="h-8 w-auto" src="/logo-white.svg" alt="Company Logo" />
+            <img className="h-8 w-auto" src={logo} alt="Company Logo" />
             <p className="mt-2 text-sm text-gray-300">© 2023 Your Company Name. All rights reserved.</p>
           </div>
           <div className="flex space-x-6">

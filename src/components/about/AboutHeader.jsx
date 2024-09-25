@@ -1,5 +1,5 @@
 import React from 'react';
-import about from '../assets/about.jpg'; // Ensure the path to your image is correct
+import about from '../../assets/about.jpg'; 
 
 export default function AboutHeader() {
   return (

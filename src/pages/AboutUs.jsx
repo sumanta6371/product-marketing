@@ -1,9 +1,9 @@
 import React from 'react'
-import AboutHeader from '../components/AboutHeader'
-import CompanyStory from '../components/CompanyStory'
-import TeamSection from '../components/TeamSection'
-import VisionFuture from '../components/VisionFuture'
-import CallToAction from '../components/CallToAction'
+import AboutHeader from '../components/about/AboutHeader'
+import CompanyStory from '../components/about/CompanyStory'
+import TeamSection from '../components/about/TeamSection'
+import CallToAction from '../components/about/CallToAction'
+import VisionFuture from '../components/about/VisionFuture'
 
 export default function AboutUs() {
   return (
