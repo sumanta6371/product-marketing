@@ -5,6 +5,7 @@ import Layout from './Layout';
 import Home from './pages/Home';
 import About from './pages/AboutUs';
 import Contact from './pages/ContactUs';
+import ProductDetail from './pages/ProductDetail';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<Contact />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
         </Routes>
       </Layout>
     </Router>

@@ -1,10 +1,10 @@
 
 import React from 'react'
-import ContactHeader from '../components/ContactHeader'
-import ContactForm from '../components/ContactForm'
-import ContactInfo from '../components/ContactInfo'
-import Map from '../components/Map'
-import SocialLinks from '../components/SocialLinks'
+import ContactHeader from '../components/contact/ContactHeader'
+import ContactForm from '../components/contact/ContactForm'
+import ContactInfo from '../components/contact/ContactInfo'
+import Map from '../components/contact/Map'
+import SocialLinks from '../components/contact/SocialLinks'
 
 export default function ContactUs() {
   return (
