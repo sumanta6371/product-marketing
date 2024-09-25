@@ -1,53 +1,55 @@
-import React from 'react'
+import React from "react";
 
-const team = [
+const branches = [
   {
-    name: 'Jane Doe',
-    role: 'CEO & Founder',
-    image: '/team-member-1.jpg',
-    bio: 'Jane has been leading the company since its inception, bringing over 15 years of industry experience.'
+    name: "Ice Cream",
+    description:
+      "Our Ice Cream branch offers a wide variety of delicious and refreshing ice cream products made from the finest ingredients.",
+    image:
+      "https://res.cloudinary.com/denarffyt/image/upload/v1727288844/product-marketing/ice2_u83tlr.jpg",
   },
   {
-    name: 'John Smith',
-    role: 'CTO',
-    image: '/team-member-2.jpg',
-    bio: 'John oversees all technical aspects of the company, ensuring we stay at the forefront of innovation.'
+    name: "Corporate Gifts",
+    description:
+      "Our Corporate Gifts branch specializes in creating personalized and unique gift packages for businesses and special events.",
+    image:
+      "https://res.cloudinary.com/denarffyt/image/upload/v1727288843/product-marketing/cg3_mciane.jpg",
   },
   {
-    name: 'Emily Brown',
-    role: 'Head of Design',
-    image: '/team-member-3.jpg',
-    bio: 'Emily leads our design team, creating beautiful and functional products that our customers love.'
+    name: "Green Plant",
+    description:
+      "Our Green Plant branch focuses on providing eco-friendly, sustainable products, helping to create a greener future.",
+    image:
+      "https://res.cloudinary.com/denarffyt/image/upload/v1727288846/product-marketing/gp1_gkfgr2.jpg",
   },
-  {
-    name: 'Michael Lee',
-    role: 'Head of Marketing',
-    image: '/team-member-4.jpg',
-    bio: 'Michael drives our marketing strategies, helping us connect with customers around the globe.'
-  }
-]
+];
 
-export default function TeamSection() {
+export default function BranchSection() {
   return (
     <div className="bg-gray-100">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Team</h2>
+          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            Our Branches
+          </h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-            Meet the passionate individuals behind our success
+            Explore our diverse range of branches
           </p>
         </div>
-        <div className="mt-12 grid gap-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-12">
-          {team.map((member) => (
-            <div key={member.name}>
+        <div className="mt-12 grid gap-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12">
+          {branches.map((branch) => (
+            <div key={branch.name}>
               <div className="space-y-4">
-                <img className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src={member.image} alt={member.name} />
+                <img
+                  className="mx-auto h-40 w-full  xl:w-full xl:h-56"
+                  src={branch.image}
+                  alt={branch.name}
+                />
                 <div className="space-y-2">
                   <div className="text-lg leading-6 font-medium space-y-1">
-                    <h3>{member.name}</h3>
-                    <p className="text-indigo-600">{member.role}</p>
+                    <h3>{branch.name}</h3>
                   </div>
-                  <p className="text-gray-500">{member.bio}</p>
+                  <p className="text-gray-500">{branch.description}</p>
                 </div>
               </div>
             </div>
@@ -55,5 +57,5 @@ export default function TeamSection() {
         </div>
       </div>
     </div>
-  )
+  );
 }

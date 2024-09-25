@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import business from '../assets/business-growth.jpg'; 
 
 export default function CompanyStory() {
   return (
@@ -7,7 +8,7 @@ export default function CompanyStory() {
         <div className="relative h-96 rounded-lg overflow-hidden">
           <img
             className="w-full h-full object-cover"
-            src="/company-image.jpg"
+            src={business}
             alt="Company representation"
           />
         </div>
