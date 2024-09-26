@@ -13,12 +13,22 @@ const slides = [
     description: 'Indulge in our creamy, artisanal ice cream made with the finest ingredients.'
   },
   {
+    image: "https://res.cloudinary.com/denarffyt/image/upload/v1727366535/product-marketing/ice7-min_ytg6vd.jpg",
+    title: 'Premium Ice Cream',
+    description: 'Indulge in our creamy, artisanal ice cream made with the finest ingredients.'
+  },
+  {
     image: "https://res.cloudinary.com/denarffyt/image/upload/v1727288842/product-marketing/cg1_azzx5a.jpg",
     title: 'Elegant Corporate Gifts',
     description: 'Impress your clients with our curated selection of sophisticated corporate gifts.'
   },
   {
     image: "https://res.cloudinary.com/denarffyt/image/upload/v1727288843/product-marketing/cg2_n16y7i.jpg",
+    title: 'Eco-Friendly Products',
+    description: 'Discover our range of sustainable, environmentally conscious products.'
+  },
+  {
+    image: "https://res.cloudinary.com/denarffyt/image/upload/v1727371558/product-marketing/gw-min_izmk41.jpg",
     title: 'Eco-Friendly Products',
     description: 'Discover our range of sustainable, environmentally conscious products.'
   }
