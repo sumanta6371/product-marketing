@@ -8,6 +8,11 @@ const slides = [
     description: 'Indulge in our creamy, artisanal ice cream made with the finest ingredients.'
   },
   {
+    image: "https://res.cloudinary.com/denarffyt/image/upload/v1727340931/product-marketing/ice3_l9kqgg.jpg",
+    title: 'Premium Ice Cream',
+    description: 'Indulge in our creamy, artisanal ice cream made with the finest ingredients.'
+  },
+  {
     image: "https://res.cloudinary.com/denarffyt/image/upload/v1727288842/product-marketing/cg1_azzx5a.jpg",
     title: 'Elegant Corporate Gifts',
     description: 'Impress your clients with our curated selection of sophisticated corporate gifts.'
