@@ -1,5 +1,5 @@
-import React from 'react'
-import { Star } from 'lucide-react'
+import React from 'react';
+import { Star, User } from 'lucide-react';
 
 export default function UserReviews({ reviews }) {
   return (
@@ -20,11 +20,7 @@ export default function UserReviews({ reviews }) {
               </div>
               <p className="text-gray-600 mb-4">{review.comment}</p>
               <div className="flex items-center">
-                <img
-                  className="h-10 w-10 rounded-full mr-4"
-                  src={review.avatar}
-                  alt={review.name}
-                />
+                <User className="h-10 w-10 text-gray-400 mr-4" />
                 <div>
                   <p className="font-semibold text-gray-900">{review.name}</p>
                   <p className="text-sm text-gray-500">{review.date}</p>
@@ -35,5 +31,5 @@ export default function UserReviews({ reviews }) {
         </div>
       </div>
     </div>
-  )
+  );
 }

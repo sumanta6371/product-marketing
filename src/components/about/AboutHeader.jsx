@@ -1,13 +1,12 @@
 import React from 'react';
-import about from '../../assets/about.jpg'; 
 
 export default function AboutHeader() {
   return (
     <div
       className="bg-cover bg-center py-16 px-4 sm:px-6 lg:px-8"
-      style={{ backgroundImage: `url(${about})` }} // Using the about image as background
+      style={{ backgroundImage: `url(https://res.cloudinary.com/denarffyt/image/upload/v1727366576/product-marketing/aboutus-min_bwc1lt.jpg)` }} // Using the about image as background
     >
-      <div className="bg-black bg-opacity-50 max-w-7xl mx-auto text-center py-10 px-4">
+      <div className=" max-w-7xl mx-auto text-center py-10 px-4">
         <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
           About Us
         </h1>
