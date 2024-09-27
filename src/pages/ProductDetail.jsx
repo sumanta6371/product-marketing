@@ -22,9 +22,9 @@ export default function ProductPage() {
   const [loading, setLoading] = useState(true);
 
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [infoRef, infoInView] = useInView({ triggerOnce: false, threshold: 0.1 });
-  const [highlightsRef, highlightsInView] = useInView({ triggerOnce: false, threshold: 0.1 });
-  const [reviewsRef, reviewsInView] = useInView({ triggerOnce: false, threshold: 0.1 });
+  const [infoRef, infoInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [highlightsRef, highlightsInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [reviewsRef, reviewsInView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   useEffect(() => {
     fetchProductData(id).then(data => {
@@ -56,7 +56,7 @@ export default function ProductPage() {
           image={product.detailImage}
         />
       </div>
-      <div ref={highlightsRef} className={`transition-all duration-1000 transform ${highlightsInView ? '-translate-y-10 opacity-100' : 'translate-y-10 opacity-0'}`}>
+      <div ref={highlightsRef} className={`transition-opacity duration-1000 transform ${highlightsInView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
         <ProductHighlights relatedProducts={product.relatedProducts} />
       </div>
       <div ref={reviewsRef} className={`transition-all duration-1000 transform ${reviewsInView ? '-translate-y-10 opacity-100' : 'translate-y-10 opacity-0'}`}>

@@ -36,12 +36,12 @@ export default function BranchSection() {
             Explore our diverse range of branches
           </p>
         </div>
-        <div className="mt-12 grid gap-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12">
+        <div className="mt-12 grid gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12">
           {branches.map((branch) => (
             <div key={branch.name}>
               <div className="space-y-4">
                 <img
-                  className="mx-auto h-40 w-full  xl:w-full xl:h-56"
+                  className="mx-auto  w-full  xl:w-full xl:h-56"
                   src={branch.image}
                   alt={branch.name}
                 />
