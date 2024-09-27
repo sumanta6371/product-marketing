@@ -8,7 +8,7 @@ export default function UserReviews({ reviews }) {
         <h2 className="text-2xl font-extrabold text-gray-900 mb-8">Customer Reviews</h2>
         <div className="grid gap-8 lg:grid-cols-3">
           {reviews.map((review, index) => (
-            <div key={index} className="bg-gray-50 rounded-lg p-6 shadow-sm">
+            <div key={index} className="bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star

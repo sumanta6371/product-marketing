@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const products = [
@@ -23,6 +23,12 @@ const products = [
 ];
 
 export default function ProductShowcase() {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
+
   return (
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,7 +40,7 @@ export default function ProductShowcase() {
             <Link 
               key={product.id} 
               to={`/products/${product.id}`} 
-              className="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+              className={`bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:rotate-2`}
             >
               <img className="w-full h-48 object-cover" src={product.image} alt={product.name} />
               <div className="p-6">

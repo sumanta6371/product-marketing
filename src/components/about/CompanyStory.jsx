@@ -1,4 +1,6 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import business from '../../assets/business-growth.jpg'; 
 
 export default function CompanyStory() {
@@ -6,10 +8,11 @@ export default function CompanyStory() {
     <div className="bg-white">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="relative h-96 rounded-lg overflow-hidden">
-          <img
+          <LazyLoadImage
             className="w-full h-full object-cover"
             src={business}
             alt="Company representation"
+            effect="blur"
           />
         </div>
         <div className="mt-12 grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-x-8">
@@ -62,5 +65,5 @@ export default function CompanyStory() {
         </div>
       </div>
     </div>
-  )
+  );
 }
