@@ -1,5 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export default function ProductHighlights({ relatedProducts }) {
   return (
@@ -10,7 +12,13 @@ export default function ProductHighlights({ relatedProducts }) {
           {relatedProducts.map((product) => (
             <Link key={product.id} to={`/products/${product.id}`} className="group">
               <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-                <img src={product.image} alt={product.name} className="w-full h-48 object-cover" />
+                <LazyLoadImage
+                  src={product.image}
+                  alt={product.name}
+                  effect="blur"
+                  className="w-full h-48 object-cover"
+                  wrapperClassName="w-full h-48"
+                />
                 <div className="p-4">
                   <h3 className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600">{product.name}</h3>
                   <p className="mt-2 text-sm text-gray-500">{product.shortDescription}</p>
@@ -21,5 +29,5 @@ export default function ProductHighlights({ relatedProducts }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
