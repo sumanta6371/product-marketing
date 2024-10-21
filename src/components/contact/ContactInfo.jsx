@@ -13,11 +13,11 @@ export default function ContactInfo() {
           </div>
           <div className="flex items-center">
             <Phone className="h-6 w-6 text-indigo-600 mr-2" />
-            <span>+1 (555) 123-4567</span>
+            <span>6361795031</span>
           </div>
           <div className="flex items-center">
             <MapPin className="h-6 w-6 text-indigo-600 mr-2" />
-            <span>123 Main St, Anytown, USA 12345</span>
+            <span>25, 29th Main Road, BTM Layout 2nd Stage ,Bangalore 560076</span>
           </div>
         </div>
       </div>

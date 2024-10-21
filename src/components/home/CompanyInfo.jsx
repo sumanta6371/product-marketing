@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function CompanyInfo() {
   return (
@@ -9,9 +9,11 @@ export default function CompanyInfo() {
           Welcome to Mandri Enterprise
         </h2>
         <p className="mt-4 text-xl text-gray-500 max-w-3xl">
-          We are dedicated to providing high-quality products that enhance your life and business. 
-          From delicious ice cream to elegant corporate gifts and eco-friendly solutions, 
-          we strive to exceed your expectations in every category.
+          At Mandri Enterprise, we specialize in creating unforgettable
+          gifting experiences that leave a lasting impression. Whether you’re
+          looking for elegant corporate gifts to express gratitude or unique
+          return gifts for your special events, our curated selection offers
+          something for every occasion.
         </p>
         <div className="mt-8">
           <Link
@@ -23,5 +25,5 @@ export default function CompanyInfo() {
         </div>
       </div>
     </section>
-  )
+  );
 }
